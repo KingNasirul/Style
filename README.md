@@ -6,25 +6,7 @@
 <a href="https://github.com/KingNasirul"><img title="Author" src="https://img.shields.io/badge/Author-KingNasirul-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 
-
-## Installation :
-
-ðŸ˜ˆ `apt update`
-
-ðŸ˜ˆ `apt upgrade`
-
-ðŸ˜ˆ `apt install git`
-
-ðŸ˜ˆ `pkg install python`
-
-ðŸ˜ˆ `pkg install python2 -y`
-
-ðŸ˜ˆ `pip2 install requests`
-
-ðŸ˜ˆ `pip2 install mechanize`
-
-ðŸ˜ˆ `git clone https://github.com/KingNasirul/PHISING`
-
+##SYSTEM FUCKER NASIRUL
 
 ### <<< If you copy , Then Give me The Credits >>>
 
