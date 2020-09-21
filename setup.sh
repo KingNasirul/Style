@@ -98,7 +98,7 @@ clear
 #Script starts
 #cd $HOME
 #cd Style
-echo Script made by:- BD Hacker Boys  
+echo Script made by:- BD Hacker Boys 
 #Uninstall
 if [ -e ".user.cfg" ]
 then
@@ -177,7 +177,7 @@ sleep 0.1 & spinner -p && spinner -t
 #Set default username if found null
 if [ -z "$uname" ]
 then
-	uname="BDHackerBoys"
+	uname="KingNasirul"
 fi
 #Sets bash.bashrc aka startup
 echo "command_not_found_handle() {
@@ -258,7 +258,7 @@ updatedw() {
 		bash
 		bash setup.sh
 		wait
-		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/Style/ver.cfg') && figlet KingNasirul && echo Restart to apply changes
+		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/Style/ver.cfg') && figlet FmKingNasirul && echo Restart to apply changes
 	fi
 	cd \$ppath
 }
@@ -318,8 +318,7 @@ cd /$HOME
 cd Style
 echo Script made by
 toilet BD
-toilet Hacker
-toilet Boys
+toilet HackerBoys
 sleep 2
 mdv README.md
 cd $pdir
