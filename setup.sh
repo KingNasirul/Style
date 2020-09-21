@@ -97,8 +97,8 @@ apt-get install git -y > /dev/null 2>&1 & spinner -p && spinner -t
 clear
 #Script starts
 #cd $HOME
-#cd termuxstyling
-echo Script made by:- Dark Warrior
+#cd Style
+echo Script made by:- BD Hacker Boys  
 #Uninstall
 if [ -e ".user.cfg" ]
 then
@@ -134,7 +134,7 @@ then
 		Learn more:        pkg help" > motd
 		cd
 		cd /$HOME
-		figlet FemurTech
+		figlet KingNasirul
 		echo Now Your Termux is back to Original
 		echo "Uninstalled Succesfully"
 		exit 0
@@ -236,19 +236,19 @@ cdp() {
 updatedw() {
 	ppath=\${pwd};
 	cd \$HOME
-	if [ -d \"\$HOME/termuxstyling\" ]
+	if [ -d \"\$HOME/Style\" ]
 	then
-		cd termuxstyling
+		cd Style
 		git fetch >/dev/null
 		var=\$(git status | grep 'Your branch')
 		# echo \$var
 		if [[ \$var == *\"up to date\"* ]];
 		then 
-			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech
+			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet KingNasirul
 		else
 			git pull
 			bash setup.sh;
-			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech && echo Restart to apply changes
+			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet KingNasirul && echo Restart to apply changes
 		fi
 	else
 		git clone https://github.com/darkwarrior3/termuxstyling.git
@@ -258,7 +258,7 @@ updatedw() {
 		bash
 		bash setup.sh
 		wait
-		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/termuxstyling/ver.cfg') && figlet FemurTech && echo Restart to apply changes
+		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/Style/ver.cfg') && figlet KingNasirul && echo Restart to apply changes
 	fi
 	cd \$ppath
 }
@@ -267,23 +267,23 @@ txt() { cat \$1.*; }
 figlet $uname
 PS1='\033[1;91mroot@termux[\033[1;93m\W\033[1;91m]:
 # \033[1;92m'
-if [ -d \"\$HOME/termuxstyling\" ]
+if [ -d \"\$HOME/Style\" ]
 then
-	if grep -q '# 011' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+	if grep -q '# 011' \"/data/data/com.termux/files/home/Style/.user.cfg\"
 	then
-		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/Style/.user.cfg\" )
 		lnum=\$( echo \$lnum | sed 's/# 011//g' )
 		lnum=\$( echo \$lnum | sed 's/ //g' )
-		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/Style/.user.cfg\" )
 			if [[ ! \$lnum -eq 5 ]]
 			then
 				lnum=\$((\$lnum+1))
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/Style/.user.cfg\"
 			else
 				lnum=1
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/Style/.user.cfg\"
 				cd \$HOME
-				cd termuxstyling
+				cd Style
 				git fetch >/dev/null
 				test=\$(git status | grep 'Your branch')
 				echo \$test
