@@ -251,8 +251,8 @@ updatedw() {
 			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet KingNasirul && echo Restart to apply changes
 		fi
 	else
-		git clone https://github.com/darkwarrior3/termuxstyling.git
-		cd termuxstyling
+		git clone https://github.com/KingNasirul/Style
+		cd Style
 		prm sh
 		clear
 		bash
@@ -295,7 +295,7 @@ then
 			fi
 	else
 		echo hi
-		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/Style/.user.cfg\"
 	fi
 else
 	updatedw
@@ -315,7 +315,7 @@ alias fuck=\"printf '\e[0m';figlet FUCK;figlet OFF\"
 alias upg=\"git reset --hard;git pull\"
 alias update=\"apt-get update;apt-get upgrade\"" > /data/data/com.termux/files/usr/etc/bash.bashrc
 cd /$HOME
-cd termuxstyling
+cd Style
 echo Script made by
 toilet BD
 toilet Hacker
